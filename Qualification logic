@@ -1,0 +1,23 @@
+
+                      <?php
+                   //Computes the status decision
+                    $cy = (int) $row->current_year;
+                    $al = (int) $row->age_limit;
+                    $bc = (int) $row->birth_certificate;
+                    $mr = (int) $row->main_report;
+                    $mf = (int) $row->min_finance;
+                    $aq = (int) $row->academic_qual;
+                    $pi = (int) $row->parents_id;
+                    //Get the sum of the scored values
+                    $det= ($cy + $al + $bc + $mr + $mf + $aq + $pi);
+                    
+                     if ($det < 14) 
+                     {
+                    echo "Not Qualified";
+                     } 
+                    else 
+                     {
+                    echo "Qualified";
+                     }
+                     ?>
+              
