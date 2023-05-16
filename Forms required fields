@@ -1,0 +1,4 @@
+ <div class="form-group">
+            <label for="formClient-Name"><?php echo lang('Reference Mode') ?></label>
+            <input type="text" class="form-control" name="reference_mode" id="formClient-Name" required placeholder="<?php echo lang('Enter reference mode') ?>" value="<?php echo $editableData->reference_mode ?>" autofocus />
+ </div>
