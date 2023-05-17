@@ -1,0 +1,2 @@
+SET @counter = 0;
+UPDATE your_table SET new_id = @counter:=@counter+1 ORDER BY id;
